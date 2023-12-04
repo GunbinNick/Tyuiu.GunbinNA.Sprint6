@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tyuiu.GunbinNA.Sprint6.Task0.V13.Lib;
 
 namespace Tyuiu.GunbinNA.Sprint6.Task0.V13
 {
@@ -49,11 +50,12 @@ namespace Tyuiu.GunbinNA.Sprint6.Task0.V13
 
         private void buttonResult_Click(object sender, EventArgs e)
         {
+            DataService ds = new DataService();
             try
             {
-                double x = Convert.ToDouble(textBoxVarX.Text);
+                int x = Convert.ToInt32(textBoxVarX.Text);
 
-                textBoxResult.Text = Convert.ToString(Math.Round(Math.Pow(x, 3) / (x * x - 1), 3));
+                textBoxResult.Text = Convert.ToString(ds.Calculate(x));
             }
             catch
             {
