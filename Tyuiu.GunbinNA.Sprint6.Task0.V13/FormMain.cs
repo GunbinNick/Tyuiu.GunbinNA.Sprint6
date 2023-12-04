@@ -31,5 +31,34 @@ namespace Tyuiu.GunbinNA.Sprint6.Task0.V13
         {
 
         }
+
+        private void textBoxVarX_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonInfo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Таск 0 выполнил студент группы СМАРТб-23-1 Гунбин Никита Анатольевич");
+        }
+
+        private void textBoxTask_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonResult_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double x = Convert.ToDouble(textBoxVarX.Text);
+
+                textBoxResult.Text = Convert.ToString(Math.Round(Math.Pow(x, 3) / (x * x - 1), 3));
+            }
+            catch
+            {
+                MessageBox.Show("Неверный ввод данных", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
