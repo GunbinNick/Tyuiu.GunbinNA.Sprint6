@@ -11,9 +11,9 @@ using Tyuiu.GunbinNA.Sprint6.Task0.V13.Lib;
 
 namespace Tyuiu.GunbinNA.Sprint6.Task0.V13
 {
-    public partial class FormMain : Form
+    public partial class FormMain_GNA : Form
     {
-        public FormMain()
+        public FormMain_GNA()
         {
             InitializeComponent();
         }
@@ -53,14 +53,19 @@ namespace Tyuiu.GunbinNA.Sprint6.Task0.V13
             DataService ds = new DataService();
             try
             {
-                int x = Convert.ToInt32(textBoxVarX.Text);
+                int x = Convert.ToInt32(textBoxVarX_GNA.Text);
 
-                textBoxResult.Text = Convert.ToString(ds.Calculate(x));
+                textBoxResult_GNA.Text = Convert.ToString(ds.Calculate(x));
             }
             catch
             {
                 MessageBox.Show("Неверный ввод данных", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void textBoxVarX_GNA_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
