@@ -30,181 +30,182 @@ namespace Tyuiu.GunbinNA.Sprint6.Task1.V14
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain_GNA));
-            this.groupBoxOutPut = new System.Windows.Forms.GroupBox();
-            this.groupBoxTask = new System.Windows.Forms.GroupBox();
-            this.groupBoxInPut = new System.Windows.Forms.GroupBox();
-            this.buttonDone = new System.Windows.Forms.Button();
-            this.buttonInfo = new System.Windows.Forms.Button();
-            this.textBoxTask = new System.Windows.Forms.TextBox();
-            this.textBoxVarStart = new System.Windows.Forms.TextBox();
-            this.textBoxVarStop = new System.Windows.Forms.TextBox();
-            this.labelVarStart = new System.Windows.Forms.Label();
-            this.labelVarStop = new System.Windows.Forms.Label();
-            this.textBoxResult = new System.Windows.Forms.TextBox();
-            this.labelResult = new System.Windows.Forms.Label();
-            this.groupBoxOutPut.SuspendLayout();
-            this.groupBoxTask.SuspendLayout();
-            this.groupBoxInPut.SuspendLayout();
+            this.groupBoxOutPut_GNA = new System.Windows.Forms.GroupBox();
+            this.groupBoxTask_GNA = new System.Windows.Forms.GroupBox();
+            this.groupBoxInPut_GNA = new System.Windows.Forms.GroupBox();
+            this.buttonDone_GNA = new System.Windows.Forms.Button();
+            this.buttonInfo_GNA = new System.Windows.Forms.Button();
+            this.textBoxTask_GNA = new System.Windows.Forms.TextBox();
+            this.textBoxVarStart_GNA = new System.Windows.Forms.TextBox();
+            this.textBoxVarStop_GNA = new System.Windows.Forms.TextBox();
+            this.labelVarStart_GNA = new System.Windows.Forms.Label();
+            this.labelVarStop_GNA = new System.Windows.Forms.Label();
+            this.textBoxResult_GNA = new System.Windows.Forms.TextBox();
+            this.labelResult_GNA = new System.Windows.Forms.Label();
+            this.groupBoxOutPut_GNA.SuspendLayout();
+            this.groupBoxTask_GNA.SuspendLayout();
+            this.groupBoxInPut_GNA.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBoxOutPut
+            // groupBoxOutPut_GNA
             // 
-            this.groupBoxOutPut.Controls.Add(this.labelResult);
-            this.groupBoxOutPut.Controls.Add(this.textBoxResult);
-            this.groupBoxOutPut.Location = new System.Drawing.Point(585, 27);
-            this.groupBoxOutPut.Name = "groupBoxOutPut";
-            this.groupBoxOutPut.Size = new System.Drawing.Size(326, 496);
-            this.groupBoxOutPut.TabIndex = 0;
-            this.groupBoxOutPut.TabStop = false;
-            this.groupBoxOutPut.Text = "Вывод данных";
+            this.groupBoxOutPut_GNA.Controls.Add(this.labelResult_GNA);
+            this.groupBoxOutPut_GNA.Controls.Add(this.textBoxResult_GNA);
+            this.groupBoxOutPut_GNA.Location = new System.Drawing.Point(585, 27);
+            this.groupBoxOutPut_GNA.Name = "groupBoxOutPut_GNA";
+            this.groupBoxOutPut_GNA.Size = new System.Drawing.Size(326, 496);
+            this.groupBoxOutPut_GNA.TabIndex = 0;
+            this.groupBoxOutPut_GNA.TabStop = false;
+            this.groupBoxOutPut_GNA.Text = "Вывод данных";
             // 
-            // groupBoxTask
+            // groupBoxTask_GNA
             // 
-            this.groupBoxTask.Controls.Add(this.textBoxTask);
-            this.groupBoxTask.Location = new System.Drawing.Point(12, 27);
-            this.groupBoxTask.Name = "groupBoxTask";
-            this.groupBoxTask.Size = new System.Drawing.Size(567, 345);
-            this.groupBoxTask.TabIndex = 1;
-            this.groupBoxTask.TabStop = false;
-            this.groupBoxTask.Text = "Условие";
+            this.groupBoxTask_GNA.Controls.Add(this.textBoxTask_GNA);
+            this.groupBoxTask_GNA.Location = new System.Drawing.Point(12, 27);
+            this.groupBoxTask_GNA.Name = "groupBoxTask_GNA";
+            this.groupBoxTask_GNA.Size = new System.Drawing.Size(567, 345);
+            this.groupBoxTask_GNA.TabIndex = 1;
+            this.groupBoxTask_GNA.TabStop = false;
+            this.groupBoxTask_GNA.Text = "Условие";
             // 
-            // groupBoxInPut
+            // groupBoxInPut_GNA
             // 
-            this.groupBoxInPut.Controls.Add(this.labelVarStop);
-            this.groupBoxInPut.Controls.Add(this.labelVarStart);
-            this.groupBoxInPut.Controls.Add(this.textBoxVarStop);
-            this.groupBoxInPut.Controls.Add(this.textBoxVarStart);
-            this.groupBoxInPut.Location = new System.Drawing.Point(13, 379);
-            this.groupBoxInPut.Name = "groupBoxInPut";
-            this.groupBoxInPut.Size = new System.Drawing.Size(375, 143);
-            this.groupBoxInPut.TabIndex = 2;
-            this.groupBoxInPut.TabStop = false;
-            this.groupBoxInPut.Text = "Ввод данных";
+            this.groupBoxInPut_GNA.Controls.Add(this.labelVarStop_GNA);
+            this.groupBoxInPut_GNA.Controls.Add(this.labelVarStart_GNA);
+            this.groupBoxInPut_GNA.Controls.Add(this.textBoxVarStop_GNA);
+            this.groupBoxInPut_GNA.Controls.Add(this.textBoxVarStart_GNA);
+            this.groupBoxInPut_GNA.Location = new System.Drawing.Point(13, 379);
+            this.groupBoxInPut_GNA.Name = "groupBoxInPut_GNA";
+            this.groupBoxInPut_GNA.Size = new System.Drawing.Size(375, 143);
+            this.groupBoxInPut_GNA.TabIndex = 2;
+            this.groupBoxInPut_GNA.TabStop = false;
+            this.groupBoxInPut_GNA.Text = "Ввод данных";
             // 
-            // buttonDone
+            // buttonDone_GNA
             // 
-            this.buttonDone.Location = new System.Drawing.Point(406, 389);
-            this.buttonDone.Name = "buttonDone";
-            this.buttonDone.Size = new System.Drawing.Size(161, 49);
-            this.buttonDone.TabIndex = 3;
-            this.buttonDone.Text = "Выполнить";
-            this.buttonDone.UseVisualStyleBackColor = true;
-            this.buttonDone.Click += new System.EventHandler(this.buttonDone_Click);
+            this.buttonDone_GNA.Location = new System.Drawing.Point(406, 389);
+            this.buttonDone_GNA.Name = "buttonDone_GNA";
+            this.buttonDone_GNA.Size = new System.Drawing.Size(161, 49);
+            this.buttonDone_GNA.TabIndex = 3;
+            this.buttonDone_GNA.Text = "Выполнить";
+            this.buttonDone_GNA.UseVisualStyleBackColor = true;
+            this.buttonDone_GNA.Click += new System.EventHandler(this.buttonDone_Click);
             // 
-            // buttonInfo
+            // buttonInfo_GNA
             // 
-            this.buttonInfo.Location = new System.Drawing.Point(406, 459);
-            this.buttonInfo.Name = "buttonInfo";
-            this.buttonInfo.Size = new System.Drawing.Size(161, 49);
-            this.buttonInfo.TabIndex = 3;
-            this.buttonInfo.Text = "Справка";
-            this.buttonInfo.UseVisualStyleBackColor = true;
-            this.buttonInfo.Click += new System.EventHandler(this.buttonInfo_Click);
+            this.buttonInfo_GNA.Location = new System.Drawing.Point(406, 459);
+            this.buttonInfo_GNA.Name = "buttonInfo_GNA";
+            this.buttonInfo_GNA.Size = new System.Drawing.Size(161, 49);
+            this.buttonInfo_GNA.TabIndex = 3;
+            this.buttonInfo_GNA.Text = "Справка";
+            this.buttonInfo_GNA.UseVisualStyleBackColor = true;
+            this.buttonInfo_GNA.Click += new System.EventHandler(this.buttonInfo_Click);
             // 
-            // textBoxTask
+            // textBoxTask_GNA
             // 
-            this.textBoxTask.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBoxTask.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxTask.Location = new System.Drawing.Point(19, 26);
-            this.textBoxTask.Multiline = true;
-            this.textBoxTask.Name = "textBoxTask";
-            this.textBoxTask.ReadOnly = true;
-            this.textBoxTask.Size = new System.Drawing.Size(536, 313);
-            this.textBoxTask.TabIndex = 0;
-            this.textBoxTask.Text = resources.GetString("textBoxTask.Text");
+            this.textBoxTask_GNA.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxTask_GNA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxTask_GNA.Location = new System.Drawing.Point(19, 26);
+            this.textBoxTask_GNA.Multiline = true;
+            this.textBoxTask_GNA.Name = "textBoxTask_GNA";
+            this.textBoxTask_GNA.ReadOnly = true;
+            this.textBoxTask_GNA.Size = new System.Drawing.Size(536, 313);
+            this.textBoxTask_GNA.TabIndex = 0;
+            this.textBoxTask_GNA.Text = resources.GetString("textBoxTask_GNA.Text");
             // 
-            // textBoxVarStart
+            // textBoxVarStart_GNA
             // 
-            this.textBoxVarStart.Location = new System.Drawing.Point(33, 80);
-            this.textBoxVarStart.Name = "textBoxVarStart";
-            this.textBoxVarStart.Size = new System.Drawing.Size(125, 26);
-            this.textBoxVarStart.TabIndex = 0;
+            this.textBoxVarStart_GNA.Location = new System.Drawing.Point(33, 80);
+            this.textBoxVarStart_GNA.Name = "textBoxVarStart_GNA";
+            this.textBoxVarStart_GNA.Size = new System.Drawing.Size(125, 26);
+            this.textBoxVarStart_GNA.TabIndex = 0;
             // 
-            // textBoxVarStop
+            // textBoxVarStop_GNA
             // 
-            this.textBoxVarStop.Location = new System.Drawing.Point(199, 80);
-            this.textBoxVarStop.Name = "textBoxVarStop";
-            this.textBoxVarStop.Size = new System.Drawing.Size(125, 26);
-            this.textBoxVarStop.TabIndex = 0;
-            this.textBoxVarStop.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBoxVarStop_GNA.Location = new System.Drawing.Point(199, 80);
+            this.textBoxVarStop_GNA.Name = "textBoxVarStop_GNA";
+            this.textBoxVarStop_GNA.Size = new System.Drawing.Size(125, 26);
+            this.textBoxVarStop_GNA.TabIndex = 0;
+            this.textBoxVarStop_GNA.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // labelVarStart
+            // labelVarStart_GNA
             // 
-            this.labelVarStart.AutoSize = true;
-            this.labelVarStart.Location = new System.Drawing.Point(33, 54);
-            this.labelVarStart.Name = "labelVarStart";
-            this.labelVarStart.Size = new System.Drawing.Size(102, 20);
-            this.labelVarStart.TabIndex = 1;
-            this.labelVarStart.Text = "Старт шага:";
+            this.labelVarStart_GNA.AutoSize = true;
+            this.labelVarStart_GNA.Location = new System.Drawing.Point(33, 54);
+            this.labelVarStart_GNA.Name = "labelVarStart_GNA";
+            this.labelVarStart_GNA.Size = new System.Drawing.Size(102, 20);
+            this.labelVarStart_GNA.TabIndex = 1;
+            this.labelVarStart_GNA.Text = "Старт шага:";
             // 
-            // labelVarStop
+            // labelVarStop_GNA
             // 
-            this.labelVarStop.AutoSize = true;
-            this.labelVarStop.Location = new System.Drawing.Point(195, 54);
-            this.labelVarStop.Name = "labelVarStop";
-            this.labelVarStop.Size = new System.Drawing.Size(101, 20);
-            this.labelVarStop.TabIndex = 1;
-            this.labelVarStop.Text = "Конец шага:";
+            this.labelVarStop_GNA.AutoSize = true;
+            this.labelVarStop_GNA.Location = new System.Drawing.Point(195, 54);
+            this.labelVarStop_GNA.Name = "labelVarStop_GNA";
+            this.labelVarStop_GNA.Size = new System.Drawing.Size(101, 20);
+            this.labelVarStop_GNA.TabIndex = 1;
+            this.labelVarStop_GNA.Text = "Конец шага:";
             // 
-            // textBoxResult
+            // textBoxResult_GNA
             // 
-            this.textBoxResult.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBoxResult.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxResult.Location = new System.Drawing.Point(7, 55);
-            this.textBoxResult.Multiline = true;
-            this.textBoxResult.Name = "textBoxResult";
-            this.textBoxResult.ReadOnly = true;
-            this.textBoxResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxResult.Size = new System.Drawing.Size(313, 435);
-            this.textBoxResult.TabIndex = 0;
+            this.textBoxResult_GNA.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxResult_GNA.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxResult_GNA.Location = new System.Drawing.Point(7, 55);
+            this.textBoxResult_GNA.Multiline = true;
+            this.textBoxResult_GNA.Name = "textBoxResult_GNA";
+            this.textBoxResult_GNA.ReadOnly = true;
+            this.textBoxResult_GNA.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxResult_GNA.Size = new System.Drawing.Size(313, 435);
+            this.textBoxResult_GNA.TabIndex = 0;
             // 
-            // labelResult
+            // labelResult_GNA
             // 
-            this.labelResult.AutoSize = true;
-            this.labelResult.Location = new System.Drawing.Point(7, 29);
-            this.labelResult.Name = "labelResult";
-            this.labelResult.Size = new System.Drawing.Size(93, 20);
-            this.labelResult.TabIndex = 1;
-            this.labelResult.Text = "Результат:";
+            this.labelResult_GNA.AutoSize = true;
+            this.labelResult_GNA.Location = new System.Drawing.Point(7, 29);
+            this.labelResult_GNA.Name = "labelResult_GNA";
+            this.labelResult_GNA.Size = new System.Drawing.Size(93, 20);
+            this.labelResult_GNA.TabIndex = 1;
+            this.labelResult_GNA.Text = "Результат:";
             // 
             // FormMain_GNA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(922, 534);
-            this.Controls.Add(this.buttonInfo);
-            this.Controls.Add(this.buttonDone);
-            this.Controls.Add(this.groupBoxInPut);
-            this.Controls.Add(this.groupBoxTask);
-            this.Controls.Add(this.groupBoxOutPut);
+            this.Controls.Add(this.buttonInfo_GNA);
+            this.Controls.Add(this.buttonDone_GNA);
+            this.Controls.Add(this.groupBoxInPut_GNA);
+            this.Controls.Add(this.groupBoxTask_GNA);
+            this.Controls.Add(this.groupBoxOutPut_GNA);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormMain_GNA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 1 | Вариант 14 | Гунбин Н. А.";
-            this.groupBoxOutPut.ResumeLayout(false);
-            this.groupBoxOutPut.PerformLayout();
-            this.groupBoxTask.ResumeLayout(false);
-            this.groupBoxTask.PerformLayout();
-            this.groupBoxInPut.ResumeLayout(false);
-            this.groupBoxInPut.PerformLayout();
+            this.groupBoxOutPut_GNA.ResumeLayout(false);
+            this.groupBoxOutPut_GNA.PerformLayout();
+            this.groupBoxTask_GNA.ResumeLayout(false);
+            this.groupBoxTask_GNA.PerformLayout();
+            this.groupBoxInPut_GNA.ResumeLayout(false);
+            this.groupBoxInPut_GNA.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBoxOutPut;
-        private System.Windows.Forms.GroupBox groupBoxTask;
-        private System.Windows.Forms.GroupBox groupBoxInPut;
-        private System.Windows.Forms.Button buttonDone;
-        private System.Windows.Forms.Button buttonInfo;
-        private System.Windows.Forms.TextBox textBoxTask;
-        private System.Windows.Forms.Label labelVarStop;
-        private System.Windows.Forms.Label labelVarStart;
-        private System.Windows.Forms.TextBox textBoxVarStop;
-        private System.Windows.Forms.TextBox textBoxVarStart;
-        private System.Windows.Forms.Label labelResult;
-        private System.Windows.Forms.TextBox textBoxResult;
+        private System.Windows.Forms.GroupBox groupBoxOutPut_GNA;
+        private System.Windows.Forms.GroupBox groupBoxTask_GNA;
+        private System.Windows.Forms.GroupBox groupBoxInPut_GNA;
+        private System.Windows.Forms.Button buttonDone_GNA;
+        private System.Windows.Forms.Button buttonInfo_GNA;
+        private System.Windows.Forms.TextBox textBoxTask_GNA;
+        private System.Windows.Forms.Label labelVarStop_GNA;
+        private System.Windows.Forms.Label labelVarStart_GNA;
+        private System.Windows.Forms.TextBox textBoxVarStop_GNA;
+        private System.Windows.Forms.TextBox textBoxVarStart_GNA;
+        private System.Windows.Forms.Label labelResult_GNA;
+        private System.Windows.Forms.TextBox textBoxResult_GNA;
     }
 }
 

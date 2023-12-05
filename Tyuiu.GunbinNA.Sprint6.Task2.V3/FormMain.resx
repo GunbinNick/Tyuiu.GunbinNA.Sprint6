@@ -118,8 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="textBoxTask_GNA.Text" xml:space="preserve">
-    <value>Написать программу, которая выводит таблицу значений функции    (2 * x + 6) / (Cos(x) + x)) - 3 (произвести табулирование) f(x) на заданном диапазоне [-5: 5] с шагом 1. Произвести проверку деления на 0. При делении на ноль вернуть значение 0. Значения округлить до двух знаков после запятой.
-
- </value>
+    <value>Написать программу, которая выводит таблицу значений функции                   (Sin(x)/(x + 1.2)) + Cos(x)*7x - 2 (произвести табулирование) f(x) на заданном диапазоне [-5: 5] с шагом 1. Произвести проверку деления на 0. При делении на ноль вернуть значение 0. Значения округлить до двух знаков после запятой.</value>
   </data>
+  <metadata name="ColumnX_GNA.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColumnFx_GNA.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColumnX_GNA.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColumnFx_GNA.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

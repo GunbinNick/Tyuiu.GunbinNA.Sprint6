@@ -7,9 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Tyuiu.GunbinNA.Sprint6.Task1.V14.Lib;
+using Tyuiu.GunbinNA.Sprint6.Task2.V3.Lib;
 
-namespace Tyuiu.GunbinNA.Sprint6.Task1.V14
+
+namespace Tyuiu.GunbinNA.Sprint6.Task2.V3
 {
     public partial class FormMain_GNA : Form
     {
@@ -20,10 +21,10 @@ namespace Tyuiu.GunbinNA.Sprint6.Task1.V14
         DataService ds = new DataService();
         private void buttonInfo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 1 выполнил студент группы СМАРТб-23-1 Гунбин Никита Анатольевич", "Сообщение");
+            MessageBox.Show("Таск 2 выполнил студент группы СМАРТб-23-1 Гунбин Никита Анатольевич", "Сообщение");
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
@@ -35,8 +36,6 @@ namespace Tyuiu.GunbinNA.Sprint6.Task1.V14
                 int start = Convert.ToInt32(textBoxVarStart_GNA.Text);
                 int stop = Convert.ToInt32(textBoxVarStop_GNA.Text);
 
-                string str;
-
                 int len = ds.GetMassFunction(start, stop).Length;
 
                 double[] array;
@@ -44,23 +43,39 @@ namespace Tyuiu.GunbinNA.Sprint6.Task1.V14
 
                 array = ds.GetMassFunction(start, stop);
 
-                textBoxResult_GNA.Text = "";
-                textBoxResult_GNA.AppendText("+----------+-----------+" + Environment.NewLine);
-                textBoxResult_GNA.AppendText("|    X     |    f(x)   |" + Environment.NewLine);
-                textBoxResult_GNA.AppendText("+----------+-----------+" + Environment.NewLine);
+                this.chartFunction_GNA.Titles.Add("График функции (Sin(x)/(x + 1.2)) + Cos(x)*7x - 2");
+
+                this.chartFunction_GNA.ChartAreas[0].AxisX.Title = "Ось X";
+                this.chartFunction_GNA.ChartAreas[0].AxisY.Title = "Ось Y";
 
                 for (int i = 0; i <= len - 1; i++)
                 {
-                    str = String.Format("|{0,5:d}     |  {1, 5:f2}   |", start, array[i]);
-                    textBoxResult_GNA.AppendText(str + Environment.NewLine);
+                    this.dataGridResult_GNA.Rows.Add(Convert.ToString(start), Convert.ToString(array[i]));
+
+                    this.chartFunction_GNA.Series[0].Points.AddXY(start, array[i]);
+
                     start++;
                 }
-                textBoxResult_GNA.AppendText("+----------+-----------+" + Environment.NewLine);
             }
             catch
             {
                 MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void buttonDone_MouseDown(object sender, MouseEventArgs e)
+        {
+            buttonDone_GNA.BackColor = Color.Yellow;
+        }
+
+        private void buttonDone_MouseEnter(object sender, EventArgs e)
+        {
+            buttonDone_GNA.BackColor = Color.IndianRed;
+        }
+
+        private void buttonDone_MouseLeave(object sender, EventArgs e)
+        {
+            buttonDone_GNA.BackColor = Color.LightCoral;
         }
     }
 }
